@@ -35,7 +35,7 @@ const Home: React.FC = () => {
           <div className="feature">
             <div className="feature-icon">⚡</div>
             <h3>Moderno</h3>
-            <p>Usando las últimas tecnologías</p>
+            <p>Se ve Facherita</p>
           </div>
         </div>
       </div>

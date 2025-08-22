@@ -41,7 +41,7 @@ src/
 ##  Componentes Detallados
 
 ### **NavMenu** (`components/navmenu.tsx`)
-El corazón de la navegación. Un menú fijo con efecto glass que permite saltar entre secciones de forma elegante.
+El corazón de la navegación. Un menú fijo que permite saltar entre secciones de forma elegante.
 
 ```tsx
 // Características clave:

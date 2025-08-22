@@ -9,7 +9,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ onNavigate }) => {
     <nav className="nav">
       <div className="container nav-content">
         <div className="nav-logo">
-          Mi Landing
+          Mi Landing Page
         </div>
         <ul className="nav-links">
           <li>

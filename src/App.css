@@ -1,0 +1,19 @@
+.app {
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.list-section {
+  background: var(--color-bg-gradient);
+  color: var(--color-text-light);
+}
+
+.list-section-container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}

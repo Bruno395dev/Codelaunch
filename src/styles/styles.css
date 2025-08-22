@@ -221,11 +221,15 @@ body {
   background: none;
   border: none;
   font-weight: bold;
+  font-size: 1.1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
   transition: all 0.3s;
-  color: var(--text);
+  color: var(--text);   
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .nav-link:hover {

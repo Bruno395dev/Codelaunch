@@ -1,4 +1,3 @@
-import React from 'react';
 import NavMenu from './components/navmenu';
 import Home from './pages/home';
 import Contact from './pages/contact';

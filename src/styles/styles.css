@@ -7,11 +7,11 @@
 }
 
 :root {
-  --primary: #667eea;
-  --accent: #ff6b6b;
-  --text: #2d3748;
-  --bg: #fff;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --primary: #f507ba;
+  --accent: #c2ff04;
+  --text: #161616;
+  --bg: #f8f9fa;
+  --shadow: 0 4px 12px #00000048;
   --radius: 8px;
 }
 
@@ -22,7 +22,7 @@ html {
 body {
   font: 400 1rem/1.6 'Montserrat', sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background: #fffffff2;
   min-height: 100vh;
 }
 
@@ -131,7 +131,7 @@ body {
 }
 
 .card {
-  background: var(--bg);
+  background: #fffffff2;
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--shadow);
@@ -143,6 +143,19 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+.card.animate-float {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.card.animate-float-p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card.animate-float-h3 {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -177,7 +190,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: #fffffff2;
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
@@ -221,7 +234,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--primary), #764ba2);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: white;
   text-align: center;
   padding-top: 120px;
@@ -274,7 +287,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  background: var(--bg);
+  background: #fffffff1;
   border-radius: var(--radius);
   border-left: 4px solid var(--primary);
   box-shadow: var(--shadow);
@@ -305,14 +318,14 @@ body {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background: var(--bg);
+  background: #fffffff1;
   padding: 3rem;
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
 
 .highlight {
-  background: linear-gradient(120deg, var(--accent), #f7b731);
+  background: linear-gradient(120deg, var(--accent), var(--bg));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -64,16 +64,12 @@ const InteractiveList: React.FC = () => {
   return (
     <div className="container animate-fade-in">
       <div className="section-header">
-        <h2 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: '700', color: 'var(--color-text-light)' }}>
-          Lista Interactiva
-        </h2>
-        <p style={{ fontSize: '1.125rem', color: 'rgba(255, 255, 255, 0.9)' }}>
-          Agrega ideas, tareas o links importantes
-        </p>
+        <h2>Lista Interactiva</h2>
+        <p>Agrega ideas, tareas o links importantes</p>
       </div>
 
-      <div className="card" style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)' }}>
-        <div className="flex flex-wrap" style={{ gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-xl)' }}>
+      <div className="card">
+        <div className="flex flex-wrap" style={{ marginBottom: '2rem' }}>
           <input
             type="text"
             value={newItem}
@@ -100,11 +96,11 @@ const InteractiveList: React.FC = () => {
 
         <div>
           {items.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: 'var(--spacing-2xl)', color: 'var(--color-text-muted)' }}>
+            <div style={{ textAlign: 'center', padding: '3rem', color: '#718096' }}>
               <p>No hay elementos aún. ¡Agrega el primero!</p>
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-md)' }}>
+            <div className="flex-column">
               {items.map(item => (
                 <div
                   key={item.id}
@@ -113,28 +109,19 @@ const InteractiveList: React.FC = () => {
                 >
                   <div className="list-content">
                     <span style={{ fontSize: '1.25rem' }}>{getTypeIcon(item.type)}</span>
-                    <span style={{ fontSize: '1rem', fontWeight: '500' }}>{item.text}</span>
+                    <span>{item.text}</span>
                   </div>
                   <div className="list-actions">
                     <button
                       onClick={() => toggleItem(item.id)}
                       className={`btn btn-small ${item.completed ? 'btn-secondary' : ''}`}
-                      style={{
-                        padding: 'var(--spacing-xs)',
-                        minWidth: '32px',
-                        background: item.completed ? 'var(--color-success)' : 'var(--color-primary)'
-                      }}
                     >
                       {item.completed ? '✓' : '○'}
                     </button>
                     <button
                       onClick={() => deleteItem(item.id)}
                       className="btn btn-small"
-                      style={{
-                        padding: 'var(--spacing-xs)',
-                        minWidth: '32px',
-                        background: 'var(--color-accent)'
-                      }}
+                      style={{ background: 'var(--accent)' }}
                     >
                       🗑️
                     </button>
@@ -147,13 +134,13 @@ const InteractiveList: React.FC = () => {
 
         {items.length > 0 && (
           <div style={{
-            marginTop: 'var(--spacing-xl)',
-            padding: 'var(--spacing-md)',
-            background: 'var(--color-bg-secondary)',
-            borderRadius: 'var(--border-radius)',
+            marginTop: '2rem',
+            padding: '1rem',
+            background: '#f7fafc',
+            borderRadius: '8px',
             textAlign: 'center',
             fontSize: '0.875rem',
-            color: 'var(--color-text-secondary)'
+            color: '#4a5568'
           }}>
             <p>
               <strong>Total:</strong> {items.length} |

@@ -4,20 +4,20 @@ const Home: React.FC = () => {
   return (
     <section id="inicio" className="section hero">
       <div className="container">
-        <div className="grid grid-2" style={{ alignItems: 'center', gap: 'var(--spacing-3xl)' }}>
+        <div className="grid grid-2" style={{ alignItems: 'center' }}>
           <div className="animate-fade-in">
             <h1 className="hero-title">
-              Bienvenido a <span className="highlight">Mi Landing</span>
+              Bienvenido a <span className="highlight">Mi Primera Landing Page Interactiva</span>
             </h1>
             <p className="hero-description">
-              Una landing page moderna y interactiva creada con React y TypeScript.
+              Landing page moderna y interactiva creada con React y TypeScript.
               Explora las diferentes secciones y descubre todas las funcionalidades.
             </p>
           </div>
           <div className="animate-slide-up">
-            <div className="card animate-float" style={{ background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)' }}>
-              <h3 style={{ color: 'var(--color-text-light)', marginBottom: 'var(--spacing-md)' }}>¡Interactúa!</h3>
-              <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>Haz scroll para explorar más contenido</p>
+            <div className="card animate-float" >
+              <h3 >¡Interactúa!</h3>
+              <p >Haz scroll para explorar más contenido</p>
             </div>
           </div>
         </div>

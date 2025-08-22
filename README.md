@@ -1,6 +1,9 @@
 # 🚀 Mi Landing Interactiva
 
-Landing page moderna y elegante construida con React, TypeScript y CSS puro.
+Landing page Interactiva y elegante construida con React, TypeScript y CSS puro.
+
+> **A tener en cuenta:** El maquetado inicial y el concepto fueron desarrollados por Bruno. Los componentes y el desarrollo de la lógica fueron formulados por Cursor. Estilo y colores de Glass elegido por Bruno en base a un gusto personal. 
+
 
 ##  Características Principales
 
@@ -85,11 +88,11 @@ El componente más interactivo. Permite agregar, completar y eliminar elementos 
 ### **Variables CSS Minimalistas**
 ```css
 :root {
-  --primary: #667eea;    /* Color principal */
-  --accent: #ff6b6b;     /* Color de acento */
-  --text: #2d3748;       /* Texto principal */
-  --bg: #fff;           /* Fondo */
-  --shadow: 0 4px 12px rgba(0,0,0,0.15);
+  --primary: #f507ba;    /* Color principal */
+  --accent: #c2ff04;     /* Color de acento */
+  --text: #161616;       /* Texto principal */
+  --bg: #f8f9fa;           /* Fondo */
+  --shadow: 0 4px 12px rgba(0,0,0,0.48);
   --radius: 8px;        /* Border radius */
 }
 ```
